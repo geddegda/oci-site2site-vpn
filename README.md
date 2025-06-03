@@ -12,15 +12,17 @@ For it to work you have to do a few simple steps:
 - change the IP at X.X.X.X with your IP
 
 This set-up will deploy for you the following resources:
-  oci_core_cpe
-  oci_core_drg
-  oci_core_drg_attachment
-  oci_core_instance
-  oci_core_internet_gateway
-  oci_core_ipsec
-  oci_core_ipsec_connection_tunnel_management
-  oci_core_nat_gateway
-  oci_core_route_table
-  oci_core_security_list
-  oci_core_subnet
-  oci_core_vcn
+- oci_core_cpe
+- oci_core_drg
+- oci_core_drg_attachment
+- oci_core_instance
+- oci_core_internet_gateway
+- oci_core_ipsec
+- oci_core_ipsec_connection_tunnel_management
+- oci_core_nat_gateway
+- oci_core_route_table
+- oci_core_security_list
+- oci_core_subnet
+- oci_core_vcn
+
+Author: Guillaume Damagnez
