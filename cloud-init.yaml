@@ -1,0 +1,14 @@
+#cloud-config
+
+runcmd:
+  - echo "Hello from Cloud-Init!" >> /home/opc/cloud-init-log.txt
+  - sudo dnf update -y
+  - sudo dnf upgrade -y
+  - sudo dnf install -y httpd
+  - sudo systemctl stop firewalld
+  - sudo firewall-offline-cmd --add-service=http
+  - systemctl start firewalld
+  - systemctl enable httpd.service
+  - systemctl restart httpd.service
+
+final_message: "We are done with cloud-init script!"
